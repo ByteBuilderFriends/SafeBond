@@ -11,9 +11,11 @@ SafeBond aims to develop a comprehensive platform enabling individuals in workpl
 #### 1. Introduction
 
 1.1 **Purpose**
+
 The purpose of this SRS document is to describe the requirements and specifications for the SafeBond platform. SafeBond will provide real-time communication between individuals in workplaces or healthcare facilities and their families, health monitoring, location tracking, and emergency alert features to ensure the safety and well-being of users.
 
 1.2 **Scope**
+
 SafeBond will be a comprehensive platform that includes the following key features:
 
 -  Chat and video communication between users and family members.
@@ -23,6 +25,7 @@ SafeBond will be a comprehensive platform that includes the following key featur
 
   
 1.3 **Definitions, Acronyms, and Abbreviations**
+
 SafeBond: The platform name.
 SRS: Software Requirements Specification.
 UI: User Interface.
@@ -30,6 +33,7 @@ API: Application Programming Interface.
 
 
 1.4 **References**
+
 No external references have been used in the creation of this SRS at this stage.
 But we will add in the future:
 Technical articles on similar systems or technologies (e.g., location tracking, health monitoring APIs).
@@ -38,6 +42,7 @@ Framework or API documentation you’ll use (e.g., .NET Core, chat/video APIs).
 Any books or tutorials relevant to the project.
 
 1.5 **Overview**
+
 This document outlines the functional and non-functional requirements of the SafeBond platform, detailing the system features, external interface requirements, and constraints to be considered during the system's development and deployment.
 
 ---
