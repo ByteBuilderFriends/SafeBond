@@ -95,14 +95,32 @@ SafeBond provides a range of essential features, ensuring seamless communication
 
 **2.5 Design and Implementation Constraints**
 
-1. The need for integration with specific APIs (e.g., health monitoring APIs)
-2. Legal requirements (e.g., data privacy and healthcare regulations like HIPAA)
+SafeBond’s design and implementation are subject to the following constraints:
+
+1. Cross-Platform Compatibility: SafeBond must be developed to work seamlessly across multiple platforms, including Android, iOS, Windows, Linux, and Mac OS. This requires ensuring consistency in user experience, interface design, and performance across all systems.
+2. Real-Time Health Monitoring: SafeBond depends on reliable health monitoring APIs for real-time data on vital signs. These APIs must be integrated smoothly, and any delays or inaccuracies in health data could impact emergency response times.
+3. Location Accuracy: SafeBond relies on GPS and other location services to track users in real-time. Any issues with accuracy or location service availability could affect the efficiency of emergency alerts and responses.
+4. Data Privacy and Security: SafeBond handles sensitive user information, including health data and location. The system must adhere to privacy regulations such as HIPAA (for US users) and GDPR (for EU users) to ensure data is protected. Encryption, secure data storage, and user consent for data usage are critical requirements.
+5. Internet Connectivity: SafeBond requires constant internet connectivity for real-time communication, health tracking, and emergency alerts. Disruptions in network connectivity could impact system performance and reduce the effectiveness of the platform.
+6. Resource Limitations on Devices: SafeBond must be optimized to run efficiently on mobile and desktop devices without excessive consumption of system resources (e.g., battery life, CPU usage, or memory).
+7. Scalability: The system should be able to scale to accommodate an increasing number of users without compromising performance or responsiveness.
+8. Legal and Regulatory Constraints: Compliance with local and international laws, especially in areas of health data processing and emergency services, must be ensured. This includes regulations around data storage, transmission, and notifications to emergency responders.
+
 
 
 **2.6 Assumptions and Dependencies**
 
-1. Assumed availability of internet connectivity for real-time communication.
-2. Dependency on third-party APIs for health tracking.
+The development and operation of SafeBond rely on the following assumptions and dependencies:
+
+- Internet Connectivity: It is assumed that users will have stable internet connections to ensure real-time communication, health monitoring, and location tracking. The platform’s performance heavily depends on uninterrupted connectivity.
+- Device Compatibility: Users are expected to have devices (mobile or desktop) capable of running SafeBond’s app, with up-to-date operating systems (Android, iOS, Windows, Linux, Mac OS). The system assumes compatibility with modern devices and their technical specifications.
+- Health Monitoring Devices: SafeBond assumes that users who require health monitoring will use compatible devices (e.g., smartwatches or wearable health trackers) that provide real-time data. The system depends on the accuracy and reliability of these devices for collecting and transmitting health information.
+- Location Services Availability: SafeBond depends on accurate and available location services (GPS) on user devices. It is assumed that users will enable location tracking and provide permissions for SafeBond to access this data.
+- API Service Availability: The system depends on third-party APIs for health monitoring and emergency services. It is assumed that these services will be available, reliable, and provide accurate data.
+- User Consent: SafeBond assumes that all users will provide consent for their health and location data to be shared with authorized family members, healthcare staff, and emergency responders when needed. The system also assumes users will regularly update their preferences and permissions.
+- Legal Compliance: It is assumed that the platform will be implemented following relevant data protection regulations (e.g., GDPR, HIPAA) and that these laws will remain relatively stable throughout the project’s lifecycle.
+- User Technical Literacy: SafeBond assumes that users will have basic technical literacy to navigate the platform, install mobile/desktop apps, and interact with its features.
+
 
 
 
