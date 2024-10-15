@@ -122,5 +122,138 @@ The development and operation of SafeBond rely on the following assumptions and 
 - User Technical Literacy: SafeBond assumes that users will have basic technical literacy to navigate the platform, install mobile/desktop apps, and interact with its features.
 
 
+---
+
+### 3. System Features
+
+
+**3.1 Real-Time Communication (Chat/Video)**
+
+Description:
+
+SafeBond provides real-time communication capabilities, enabling patients to chat or video call with family members, friends, and healthcare staff. This feature ensures users remain connected at all times, regardless of location, enabling social interaction and support during emergencies. Additionally, in critical situations, the system automatically calls the nearest family members or friends, followed by all family members, to notify them of the user's emergency.
+
+
+
+Functional Requirements:
+
+- The system shall allow users to initiate and receive text messages in real-time.
+- The system shall support video calls between users.
+- The system shall provide a secure chat feature for exchanging text, images, and files between users.
+- The system shall provide notification alerts for incoming chat messages and video calls.
+- The system shall allow users to mute notifications or block individuals if necessary.
+- The system shall automatically initiate a call to the user's nearest family members or friends in case of an emergency, providing an automated message with the user's health condition and location.
+- The system shall then escalate the automated call to all other family members.
+
+
+Performance Requirements:
+
+
+- The system shall ensure text message delivery within 2 seconds under stable network conditions.
+- Video calls shall maintain a resolution of at least 720p under optimal network conditions.
+- The system shall support video calls without interruptions for up to 60 minutes.
+- The system shall not consume more than 50 MB of data per minute during a video call under standard conditions.
+- The system shall initiate automated emergency calls within 5 seconds of detecting critical health changes.
+
+
+**3.2 Health Monitoring (Vital Signs Tracking)**
+
+Description:
+
+SafeBond continuously monitors the patient’s vital signs, such as heart rate and other critical health metrics, using connected devices. This feature is crucial for identifying sudden changes in health that may require immediate attention, ensuring that both users and their families are informed about their well-being in real-time.
+
+
+Functional Requirements:
+
+- The system shall integrate with health monitoring devices (e.g., smartwatches, fitness trackers) to collect real-time data on vital signs.
+- The system shall display real-time health data in the mobile and desktop apps.
+- The system shall trigger alerts if any health parameters (e.g., heart rate) drop below or exceed pre-set thresholds.
+- The system shall provide family members and healthcare staff access to the patient's health data.
+- The system shall store historical health data for future reference and analysis.
+- The system shall enable users to set personalized health alerts based on their specific medical conditions.
+
+Performance Requirements:
+
+- Health data updates shall be reflected in the system within 5 seconds of receiving it from connected devices.
+- The system shall trigger emergency alerts within 10 seconds of detecting critical health conditions.
+- The system shall ensure 99.9% uptime for health data monitoring.
+- The system shall maintain data accuracy within a margin of 5% for all monitored vital signs.
+
+
+**3.3 Emergency Alerts**
+
+Description:
+
+SafeBond provides a robust emergency alert system that automatically notifies family members and healthcare staff in case of critical health conditions. This feature is essential for ensuring prompt responses during emergencies, enhancing user safety and well-being.
+
+Functional Requirements:
+
+- The system shall monitor vital signs continuously and detect critical health conditions based on pre-set thresholds.
+- The system shall automatically send alerts to the nearest family members or friends when a critical condition is detected, including the user's location and health status.
+- The system shall escalate notifications to all family members if the nearest contacts do not respond within a specified timeframe.
+- The system shall allow users to customize alert preferences, including who to notify and preferred communication methods (call, SMS, push notification).
+- The system shall provide real-time status updates to family members and healthcare staff regarding the user’s health condition and response efforts.
+- The system shall enable healthcare staff to access emergency alerts and health data for informed decision-making.
+
+Performance Requirements:
+
+- The system shall trigger emergency alerts within 10 seconds of detecting critical health changes.
+- The system shall maintain a notification delivery success rate of 99.5%.
+- The system shall provide feedback to users regarding the status of alerts sent (e.g., “Alert sent to family members”) within 5 seconds.
+- The system shall ensure that automated calls to family members complete within 30 seconds under normal network conditions.
+
+
+**3.4 Location Tracking**
+
+Description:
+
+SafeBond incorporates a location tracking feature that allows real-time monitoring of the user's whereabouts. This functionality is critical for ensuring the safety of patients in healthcare settings or while out in the community, allowing family members and healthcare staff to respond promptly to emergencies or changes in the user's location.
+
+Functional Requirements:
+
+- The system shall utilize GPS and other location services to track the user's real-time location.
+- The system shall provide users with the option to share their location with selected family members or healthcare staff.
+- The system shall alert family members if the user moves outside a pre-defined safe zone.
+- The system shall allow users to manually update their location if GPS data is inaccurate.
+- The system shall store location history for users, providing access to family members and healthcare staff as needed.
+- The system shall provide a map interface displaying the user's current location and recent movements.
+
+Performance Requirements:
+
+- The system shall update the user's location within 5 seconds of a change in position.
+- The system shall maintain location accuracy within a margin of 10 meters.
+- The system shall ensure the battery usage for location tracking does not exceed 15% per hour under standard operating conditions.
+- The system shall provide notifications to users if location services are disabled or malfunctioning.
+
+
+**3.5 Finding Nearest People and Hospitals**
+
+Description:
+
+SafeBond includes a feature that helps users quickly find and connect with the nearest friends, family members, or hospitals during emergencies. This capability is vital for ensuring timely assistance and medical care when it is most needed.
+
+Functional Requirements:
+
+- The system shall utilize GPS data to identify and display the nearest friends and family members based on the user’s location.
+- The system shall provide users with a list of nearby hospitals, including contact information and estimated travel time from the user's current location.
+- The system shall allow users to send alerts to nearby friends and family members during emergencies, requesting immediate assistance.
+- The system shall enable users to view directions to the nearest hospital through integrated mapping services.
+- The system shall provide options for users to customize their nearest contacts list, prioritizing those they wish to alert in emergencies.
+- The system shall include a feature for healthcare staff to access the nearest hospitals and contact them for emergency assistance.
+
+
+Performance Requirements:
+
+- The system shall identify and display the nearest friends and hospitals within 10 seconds of the user's request.
+- The system shall ensure location accuracy for nearby contacts and hospitals within a margin of 10 meters.
+- The system shall provide users with accurate travel time estimates to the nearest hospital, updated in real-time based on current traffic conditions.
+- The system shall maintain an uptime of 99.9% for location services.
+
+
+---
+
+
+
+
 
 
